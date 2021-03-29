@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<project name="HelloWorld" default="war">
+<project name="HelloWorld" default="war" basedir=".">
      
     <target name="init">
         <mkdir dir="WebContent"/>
@@ -9,14 +9,9 @@
         <mkdir dir="dist" />
     </target>
     <target name="war" depends="init">
-        <war destfile="dist/Hellowordnew.war" needxmlfile="false">
-            <fileset dir="src/com"/>
+        <war destfile="dist/Helloworldnew.war" needxmlfile="false">
+            <fileset dir="./src/com"/>
         </war>
-    </target>
-     
-    <target name="clean">
-        <delete dir="dist" />
-        <delete dir="build" />
     </target>
      
 </project> 
