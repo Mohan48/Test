@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project name="HelloWorld" default="war" basedir=".">
     <target name="del" >
-	<delete file="./src/com/Helloworldnew.war"/>
+	<mkdir dir="dist" />
+	<delete file="./dist/Helloworldnew.war"/>
     </target>
      
     <target name="init" depends="del">
@@ -9,7 +10,6 @@
 	<mkdir dir="WebContent/WEB-INF"/>
 	<mkdir dir="WebContent/META-INF"/>
 	<mkdir dir="build" />
-        <mkdir dir="dist" />
 	<mkdir dir="src/com" />
 	<move file="meh.html" todir="./src/com"/>
 	
