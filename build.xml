@@ -12,6 +12,8 @@
 	<mkdir dir="build" />
 	<mkdir dir="src/com" />
 	<move file="meh.html" todir="./src/com"/>
+	<move file="Helloworld.jsp" todir="./src/com"/>
+	
 	
 	
     </target>
